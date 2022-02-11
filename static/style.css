@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2? family= Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700 & display=swap');
+
+html, body {
+    font-family: Ubuntu, Arial; /*fonte da body*/
+    width: 100%; /*largura da body*/
+    height: 100%; /*altura da body*/
+}
+
+#header {
+    position: fixed; /*posição fixa quando rolar a pagina*/
+    top: 0; /*posição presa no topo da pagina*/
+    left: 0; /*posição presa na esquerda da pagina*/
+    bottom: 0; /*posição presa em baixo da pagina*/
+    background: #021124; /*cor do fundo*/
+    overflow-y: auto; /*cria um scrol quando a tela for diminuida e o conteudo for grande para não corta-lo*/
+    width: 300px; /*largura fixa*/
+    transition: allease-in-out 0.5s; /*transição para esconder o menu e voltar a mostra-lo*/
+    padding: 0 15px; /*distancia zero em cima e em baixo e 15 px da esquerda e da direita*/
+    z-index: 9997; /*para se sobrepor a qualquer outro conteudo fora da header*/
+}
+
+#header .profile img {
+    margin: 15px auto; /*margem de 15 px para cima e para baixo e automatico para a esquerda e direita*/
+    display: block; /*forma do display*/
+    width: 120px; /*largura*/
+    border:8px solid #2c2f3f; /*borda solida com cor*/
+    border-radius: 50%; /*ddeixa a foto redonda*/
+}
+
+#header .profile h1 {
+    font-size: 24px; /*tamanho do h1*/
+    margin: 0; /*sem margem*/
+    padding: 0; /*sem distancia*/
+    font-weight: 600; /*tamanho da fonte*/
+    text-align: center; /*alinhamento central do texto*/
+    color: #fff; /*cor da fonte*/
+}
+
+#header .profile .social-links a {
+    font-size: 1rem; /*tamanho da fonte*/
+    background: #212431; /*cor do fundo*/
+    color: #fff; /*cor da fonte*/
+    padding: 0.6rem; /*tamanho da distancia*/
+    margin-right: 1rem; /*tamanho da margem para direita*/
+    border-radius: 50%; /*deixar o icone redondo*/
+    transition: 0.3s; /*na hora de aplicar o hover*/
+    text-decoration: none; /*tirar todo o texto de um link padrão*/
+}
+
+#header .profile .social-links a:hover {
+    background: #149ddd; /*quando passar o mouse em cima do icone mudar de cor*/
+}
+
+.nav-menu {
+    padding: 1.5rem;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+    display: flex; /*deixa o displai com flex box*/
+    align-items: center; /*centraliza os icones co as frases*/
+    color: #a8a9b4; /*cor do icone em descanço*/
+    transition: 0.3s; /*na hora de aplicar o hover*/
+    font-size: 15px; /*tamanho da fonte*/
+}
+
+/*para alterar apenas o icone*/
+.nav-menu a i,
+.nav-menu a:focus i {
+    font-size: 24px; /*tamanho da fonte*/
+    padding-right: 0.8rem; /*distancia do icone para direita*/
+    color: #6f7180; /*cor do icone em descanço*/
+}
+
+/*alterando o link ao fazer um houver*/
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover > a {
+    text-decoration: none; /*sem decoração de texto no link*/
+    color: #fff; /*cor da fonte do link ao passar o mouse*/
+}
+
+/*alterando o icone ao fazer um houver*/
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover > a i {
+    color: #149ddd; /*cor do icone ao passar o mouse*/
+}
