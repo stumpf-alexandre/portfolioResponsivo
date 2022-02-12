@@ -12,7 +12,7 @@
 </head>
 <body>
     
-    <!--Barra lateral com aside responsiva-->
+    <!--Inicio do menu lateral responsiva-->
     <aside id="header">
         <section class="profile">
             <img src="../static/img/" alt="Foto do Alexandre">
@@ -91,6 +91,29 @@
               </ul>
         </nav>
     </aside>
+    <!--Fim do menu lateral-->
+
+    <!--Inicio do conteúdo principal-->
+    <main id="main">
+        <section id="inicio" class="row m-0 p-0"> <!--row m-0 p-0 -> a row significa que é uma linha dentro do codigo, e m-0 sem margem e p-0 sem padding, ficando 100% fixa nas margens da pagina-->
+            
+            <div class="col-md-5 d-flex justify-content-center align-items-center flex-column"> <!--classe 100% bootstrap-->
+                <h2 class="text-white text-shadow">Alexandre Stumpf</h2>
+                <span id="subtitle" class="text-white text-shadow"> <!--o text white é do bootstrap-->
+                    Analista e Programador de Sistemas
+                </span>
+            </div>
+
+            <div class="col-md-7 d-flex justify-content-end align-items-end">
+                <div id="arraste" class="d-flex align-items-center">
+                    <i class="bi bi-arrow-down text-white pe-2 fs-2" aria-hidden="true"></i>
+                    <a href="#sobre">Arraste para mais</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <!--Fim do conteúdo principal-->
 
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../static/script.js"></script>
