@@ -18,7 +18,7 @@
     <!--Inicio do menu lateral responsiva-->
     <aside id="header">
         <section class="profile">
-            <img src="../static/img/" alt="Foto do Alexandre">
+            <img src="../static/img/perfil.png" alt="Foto do Alexandre">
             <h1>Alexandre Stumpf</h1>
             <div class="social-links mt-4 text-center">
                 <!--o comando mt-4 text-center, é um comando padrão do bootstrap-->
@@ -50,14 +50,14 @@
             <ul class="nav flex-column">
 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">
+                    <a class="nav-link active" aria-current="page" href="#inicio">
                         <i class="bi bi-house"></i>
                         Inicio
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#sobre">
                         <i class="bi bi-person"></i>
                         Sobre
                     </a>
@@ -98,9 +98,12 @@
 
     <!--Inicio do conteúdo principal-->
     <main id="main">
+
+        <!--iniciando a seção inicio-->
         <section id="inicio" class="row m-0 p-0"> <!--row m-0 p-0 -> a row significa que é uma linha dentro do codigo, e m-0 sem margem e p-0 sem padding, ficando 100% fixa nas margens da pagina-->
             
             <div class="col-md-5 d-flex justify-content-center align-items-center flex-column"> <!--classe 100% bootstrap-->
+                <!--subtitulo-->
                 <h2 class="text-white text-shadow">Alexandre Stumpf</h2>
                 <span id="subtitle" class="text-white text-shadow"> <!--o text white é do bootstrap-->
                     Analista e Desenvolvedor de Sistemas
@@ -110,11 +113,89 @@
             <div class="col-md-7 d-flex justify-content-end align-items-end">
                 <div id="arraste" class="d-flex align-items-center">
                     <i class="bi bi-arrow-down text-white pe-2 fs-2" aria-hidden="true"></i>
-                    <a href="#sobre">Arraste p/ mais</a>
+                    <a class="text-white text-decoration-none" href="#sobre">Arraste p/ mais</a>
                 </div>
             </div>
 
         </section>
+        <!--fim da seção inicio-->
+
+        <!--iniciando a seção sobre-->
+        <section class="container mt-5" id="sobre"> <!--classe padrão do bootstrap-->
+
+            <div class="row w-100"> <!--sistema de grid do bootstrap-->
+                <div class="col-md-12">
+                    <!--subtitulo-->
+                    <h2 class="pt-3">Sobre</h2>
+                    <p>
+                        Proativo, fácil relacionamento, criatico, com 
+                        habilidades para priorizar grandes volumes de 
+                        trabalho com a equipe. Busco uma oportunidade de 
+                        trabalho para colocar meus conhecimentos adquiridos 
+                        em prática.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img class="img-fluid shadow" src="../static/img/perfil.png" alt="Foto do Alexandre" /> <!--img-fluid e shadow são classes do bootstrap, a img-fluid a imagem se adapta a qualquer tamanho e o shadow coloca um leve sombreamento na borda da imagem-->
+                </div>
+                <div class="col-md-8">
+                    <h3>Desenvolvimento</h3>
+                    <p>
+                        Ja desenvolvi projetos em Android com o Java 
+                        na sua linguagem, projetos com HTML5, CSS3 e 
+                        PHP e um pouco de C#.
+                    </p>
+                    <p>
+                        Como banco de dados ja programei para MySQL, 
+                        SQLite, PHP Admin, Firebase e um pouco para 
+                        postgre SQL.
+                    </p>
+                    <p>
+                        Ja utilizei ferramentas de modelagem UML e 
+                        ferramentas de gerenciamento de tarefas como 
+                        o SCRUM.
+                    </p>
+                    <p>
+                        Atualmente estou estudando JavaEE e Angular 
+                        para aumentar o meu conhecimento.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush fs-5">
+                                <li class="list-group-item">
+                                    Nascido: <span class="fw-lighter">22 de outubro de 1979</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Cidade: <span class="fw-lighter">Torres</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Estado: <span class="fw-lighter">Rio Grande do Sul</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush fs-5">
+                                <li class="list-group-item tel">
+                                    Tel/WattsApp: <a href="tel:+5551980307155" class="fw-lighter text-decoration-none link-dark">51 98030-7155</a>
+                                </li>
+                                <li class="list-group-item">
+                                    Telegram: <a href="https://t.me/alexandrestumpf22" class="fw-lighter text-decoration-none link-dark" target="_blank">@alexandrestumpf22</a>
+                                </li>
+                                <li class="list-group-item">
+                                    Skype: <a href="skype:live:als.stumpf_2" class="fw-lighter text-decoration-none link-dark">live:als.stumpf_2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--fim da seção sobre-->
+
     </main>
     <!--Fim do conteúdo principal-->
 

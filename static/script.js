@@ -7,7 +7,7 @@ const body = document.querySelector('body');
 menuMobile.addEventListener('click', () => {
     /*o menuMobile verifica se a classList contem a classe bi-list em modo mobile*/
     menuMobile.classList.contains("bi-list") ? menuMobile.classList.replace("bi-list", "bi-x") : menuMobile.classList.replace("bi-x", "bi-list");
-    /*caso a classe esteja em bi-list é transformado para bi-x, se caso esteja em bi-x transforma em bi-list em modo mobile*/
+    /*caso a classe esteja em bi-list (icone amburguer) é transformado para bi-x (icone X), se caso esteja em bi-x (icone X) transforma em bi-list (icone amburguer) em modo mobile*/
 
     body.classList.toggle("menu-nav-active"); /*adiciona uma nova class nova a tag body*/
 })
