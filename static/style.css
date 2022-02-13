@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2? family= Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700 & display=swap');
 
+/*css da body*/
 html, body {
     font-family: Ubuntu, Arial; /*fonte da body*/
     width: 100%; /*largura da body*/
     height: 100%; /*altura da body*/
 }
 
+/*css da aside*/
 #header {
     position: fixed; /*posição fixa quando rolar a pagina*/
     top: 0; /*posição presa no topo da pagina*/
@@ -19,14 +21,16 @@ html, body {
     z-index: 9997; /*para se sobrepor a qualquer outro conteudo fora da header*/
 }
 
+/*css da foto do menu lateral*/
 #header .profile img {
     margin: 15px auto; /*margem de 15 px para cima e para baixo e automatico para a esquerda e direita*/
     display: block; /*forma do display*/
     width: 120px; /*largura*/
     border:8px solid #2c2f3f; /*borda solida com cor*/
-    border-radius: 50%; /*ddeixa a foto redonda*/
+    border-radius: 50%; /*deixa a foto redonda*/
 }
 
+/*css do nome do menu lateral*/
 #header .profile h1 {
     font-size: 24px; /*tamanho do h1*/
     margin: 0; /*sem margem*/
@@ -36,6 +40,7 @@ html, body {
     color: #fff; /*cor da fonte*/
 }
 
+/*css dos icones das redes sociais do menu lateral*/
 #header .profile .social-links a {
     font-size: 1rem; /*tamanho da fonte*/
     background: #212431; /*cor do fundo*/
@@ -89,12 +94,14 @@ html, body {
     color: #149ddd; /*cor do icone ao passar o mouse*/
 }
 
+/*começa a margem esquerda da main para sair de tras do menu lateral*/
 #main {
-    margin-left: 300px; /*começa a margem n px para a esquerda*/
+    margin-left: 300px;
 }
 
+/*css do backgroud da main*/
 section#inicio {
-    background-image: url(./img/fundo.png); /*coloca uma imagem no background*/
+    background-image: url(./img/fundo.jpg); /*coloca uma imagem no background*/
     background-repeat: no-repeat; /*para não se repetir*/
     background-size: cover; /*para a imagem ocupar todo o espaço do background*/
     background-attachment: fixed; /*deixa a imagem fixa mesmo que voce role a pagina*/
@@ -103,19 +110,80 @@ section#inicio {
     height: 100vh; /*tamanho da altura, o vh é tamanho total da tela*/
 }
 
+/*titulo da main*/
 section#inicio h2 {
     font-size: 6rem; /*tamanho da fonte*/
 }
 
+/*subtitulo da main*/
 section#inicio span#subtitle{
     margin-right: 8rem; /*posiciona a margem a direita*/
     font-size: 1,5rem; /*tamanho da fonte*/
 }
 
+/*colocando borda no texto*/
 .text-shadow {
     text-shadow: 4px 4px 10px #000000;
 }
 
+/*css da tag arraste para mais*/
 section#inicio div#arraste {
     width: 9rem; /*tamanho da largura*/
+}
+
+/*responsividade com css*/
+i.menu-mobile {
+    position: fixed; /*fixa o icone amburguer*/
+    color: #fff; /*cor do icone amburguer*/
+    background-color: #030327; /*cor do fundo do icone amburguer*/
+    right: 1rem; /*posição que o icone amburguer fida do lado direito*/
+    top: 1rem; /*posição que o icone amburguer fica do topo*/
+    font-size: 1.5rem; /*tamanho da fonte do icone amburguer*/
+    border-radius: 4rem; /*deixa o icone amburguer redondo*/
+    cursor: pointer; /*transforma o cursor em uma mão*/
+    z-index: 10; /*deixa o icone amburguer elevado das outras tag*/
+    width: 45px; /*largura do icone amburguer*/
+    height: 45px; /*altura do icone amburguer*/
+    display: none; /*deixa o icone amburguer invisivel qualdo a tela for maior que 1024px*/
+    justify-content: center; /*centraliza o icone amburguer*/
+    align-items: center; /*centraliza o icone amburguer*/
+}
+
+/*quando acionar o menu amburguer no mobile*/
+.menu-nav-active{
+    overflow: hidden; /*quando o menu lateral estiver ativo no mobile tira o scrow até ele desaparecer*/
+}
+
+/*quando acionar o menu amburguer no mobile*/
+.menu-nav-active #header {
+    left: 0; /*faz com que o menu lateral fique com a tag left com 300px novamente*/
+}
+
+/*altera as tags quando a tela estiver do tamanho de 1024px*/
+@media (max-width: 1024px) {
+    /*alteração do menu lateral*/
+    #header{
+        left: -300px; /*faz sumir o menu lateral quando a tela tiver - 1024px*/
+    }
+
+    /*alteração icone amburguer*/
+    i.menu-mobile{
+        display: flex; /*deixa visivel o icone amburguer quando a tela esta com 1024px*/
+    }
+
+    /*alteração do titulo da main*/
+    section#inicio h2{
+        font-size:3.5rem; /*altera a fonte do h2 quando a tela for menor que 1024px*/
+    }
+
+    /*alteração do subtitulo da main*/
+    section#inicio span#subtitle{
+        margin-right: 0; /*altera a margem do subtitulo na main quando a tela estiver com 1024px*/
+        font-size: 1rem; /*altera o tamanho da fonte do subtitulo na main quando a tela estiver com 1024px*/
+    }
+
+    /*alteração do backgroind da main*/
+    #main{
+        margin-left: 0; /*deixa a margem a esquerda com 0px quando a tela tiver com 1024px*/
+    }
 }
