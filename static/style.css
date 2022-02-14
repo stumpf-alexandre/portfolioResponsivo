@@ -214,3 +214,8 @@ i.menu-mobile {
 *::-webkit-scrollbar-thumb {
     background-color: #252c90;
 }
+
+/*estilizando o backgroud da seção habilidades*/
+.section-bg {
+    background-color: #eff5ff;
+}

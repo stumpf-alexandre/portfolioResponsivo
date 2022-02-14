@@ -15,7 +15,7 @@
     <!--icone de menu amburguer-->
     <i class="bi bi-list menu-mobile"></i>
     
-    <!--Inicio do menu lateral responsiva-->
+    <!--inicio do menu lateral responsiva-->
     <aside id="header">
         <section class="profile">
             <img src="../static/img/perfil.png" alt="Foto do Alexandre">
@@ -64,46 +64,46 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#habilidades">
                         <i class="bi bi-list-check"></i>
                         Habilidades
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">
+                    <a class="nav-link" aria-current="page" href="#curriculo">
                         <i class="bi bi-file-earmark"></i>
                         Currículo
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#aperfeiçoamento">
                         <i class="bi bi-collection"></i>
                         Aperfeiçoamento
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#email">
                         <i class="bi bi-envelope"></i>
-                        Contatos
+                        E-mail
                     </a>
                 </li>
 
               </ul>
         </nav>
     </aside>
-    <!--Fim do menu lateral-->
+    <!--fim do menu lateral-->
 
-    <!--Inicio do conteúdo principal-->
+    <!--inicio do conteúdo principal-->
     <main id="main">
 
         <!--iniciando a seção inicio-->
         <section id="inicio" class="row m-0 p-0"> <!--row m-0 p-0 -> a row significa que é uma linha dentro do codigo, e m-0 sem margem e p-0 sem padding, ficando 100% fixa nas margens da pagina-->
             
             <div class="col-md-5 d-flex justify-content-center align-items-center flex-column"> <!--classe 100% bootstrap-->
-                <!--subtitulo-->
+                <!--subtitulo inicio-->
                 <h2 class="text-white text-shadow">Alexandre Stumpf</h2>
                 <span id="subtitle" class="text-white text-shadow"> <!--o text white é do bootstrap-->
                     Analista e Desenvolvedor de Sistemas
@@ -121,11 +121,11 @@
         <!--fim da seção inicio-->
 
         <!--iniciando a seção sobre-->
-        <section class="container mt-5" id="sobre"> <!--classe padrão do bootstrap-->
+        <section id="sobre" class="container mt-5"> <!--classe padrão do bootstrap-->
 
             <div class="row w-100"> <!--sistema de grid do bootstrap-->
                 <div class="col-md-12">
-                    <!--subtitulo-->
+                    <!--subtitulo sobre-->
                     <h2 class="pt-3">Sobre</h2>
                     <p>
                         Proativo, fácil relacionamento, criatico, com 
@@ -142,26 +142,46 @@
                     <img class="img-fluid shadow" src="../static/img/perfil.png" alt="Foto do Alexandre" /> <!--img-fluid e shadow são classes do bootstrap, a img-fluid a imagem se adapta a qualquer tamanho e o shadow coloca um leve sombreamento na borda da imagem-->
                 </div>
                 <div class="col-md-8">
-                    <h3>Desenvolvimento</h3>
-                    <p>
-                        Ja desenvolvi projetos em Android com o Java 
-                        na sua linguagem, projetos com HTML5, CSS3 e 
-                        PHP e um pouco de C#.
-                    </p>
-                    <p>
-                        Como banco de dados ja programei para MySQL, 
-                        SQLite, PHP Admin, Firebase e um pouco para 
-                        postgre SQL.
-                    </p>
-                    <p>
-                        Ja utilizei ferramentas de modelagem UML e 
-                        ferramentas de gerenciamento de tarefas como 
-                        o SCRUM.
-                    </p>
-                    <p>
-                        Atualmente estou estudando JavaEE e Angular 
-                        para aumentar o meu conhecimento.
-                    </p>
+                    <h3>Formação</h3>
+                    <details>
+						<summary>Ensino Médio</summary>
+						<ul>
+							<li>
+								Escola Estadual de 1° e 2° graus Daniel de Oliveira Paiva, 1997
+								<br>
+								Técnico em Agropecuaria
+							</li>
+						</ul>
+					</details>
+
+					<hr>
+
+					<details>
+						<summary>Ensino Superior</summary>
+						<ul>
+							<li>
+								Universidade Luterana do Brasil, 2018
+								<br>
+								Tecnólogo em Analise e Desenvolvimento de Sistemas
+							</li>
+						</ul>
+					</details>
+
+					<hr>
+
+					<details>
+						<summary>Pós-Graduação</summary>
+						<ul>
+							<li>
+								Faculdade Metropolitana do Estado de São Paulo, 2021
+								<br>
+								Ciência de Dados e Big Data Analytics
+							</li>
+						</ul>
+					</details>
+
+                    <hr>
+
                     <div class="row">
                         <div class="col-md-6">
                             <ul class="list-group list-group-flush fs-5">
@@ -196,8 +216,140 @@
         </section>
         <!--fim da seção sobre-->
 
+        <!--inicio da seção habilidades-->
+        <section id="habilidades" class="mt-5 section-bg">
+
+            <div class="container pb-5">
+                <!--subtitulo habilidades-->
+                <h2 class="pt-5">Habilidades</h2>
+                <p>
+                    Habilidades tecnicas adquiridas de acordo 
+                    com a porcentagem de conhecimento, que 
+                    acredito ter em cada uma delas.
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0">HTML5</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                75%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0">CSS3</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                60%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0">Java Script</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                                15%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0">Java</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                85%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0">C#</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                55%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0">PHP</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                                45%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0">Flutter</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                                35%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0">.Net</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 27%;" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100">
+                                27%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0">My SQL</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                80%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0">Postgre SQL</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                25%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0">SQLite</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 58%;" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100">
+                                58%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0">PHPMyAdmin</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                40%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0">Firebase</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                70%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0">SCRUM</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 79%;" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100">
+                                79%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0">UML</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 67%;" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+                                67%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0">Python</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                10%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--fim da seção habilidades-->
+
     </main>
-    <!--Fim do conteúdo principal-->
+    <!--fim do conteúdo principal-->
 
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../static/script.js"></script>

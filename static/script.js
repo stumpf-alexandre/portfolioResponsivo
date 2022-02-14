@@ -10,4 +10,16 @@ menuMobile.addEventListener('click', () => {
     /*caso a classe esteja em bi-list (icone amburguer) é transformado para bi-x (icone X), se caso esteja em bi-x (icone X) transforma em bi-list (icone amburguer) em modo mobile*/
 
     body.classList.toggle("menu-nav-active"); /*adiciona uma nova class nova a tag body*/
-})
+});
+
+/*fecha o menu quando clicar em algum item e muda o icone para amburguer*/
+const navItem = document.querySelectorAll('.nav-item');
+
+navItem.forEach((item) => {
+    item.addEventListener("click", () => {
+        if(body.classList.contains("menu-nav-active")) {
+            body.classList.remove("menu-nav-active");
+            menuMobile.classList.replace("bi-x", "bi-list");
+        }
+    });
+});
