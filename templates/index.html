@@ -77,12 +77,12 @@
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#aperfeiçoamento">
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="#portfolio">
                         <i class="bi bi-collection"></i>
-                        Aperfeiçoamento
+                        Portfólio
                     </a>
-                </li>
+                </li>-->
 
                 <li class="nav-item">
                     <a class="nav-link" href="#email">
@@ -99,7 +99,7 @@
     <!--inicio do conteúdo principal-->
     <main id="main">
 
-        <!--iniciando a seção inicio-->
+        <!--inicio a seção inicio-->
         <section id="inicio" class="row m-0 p-0"> <!--row m-0 p-0 -> a row significa que é uma linha dentro do codigo, e m-0 sem margem e p-0 sem padding, ficando 100% fixa nas margens da pagina-->
             
             <div class="col-md-5 d-flex justify-content-center align-items-center flex-column"> <!--classe 100% bootstrap-->
@@ -120,7 +120,7 @@
         </section>
         <!--fim da seção inicio-->
 
-        <!--iniciando a seção sobre-->
+        <!--inicio a seção sobre-->
         <section id="sobre" class="container mt-5"> <!--classe padrão do bootstrap-->
 
             <div class="row w-100"> <!--sistema de grid do bootstrap-->
@@ -594,6 +594,68 @@
 
         </section>
         <!--fim da seção curriculo-->
+
+        <!--inicio da seção contato-->
+        <section id="contato" class="section-bg pt-5 pb-5">
+
+            <div class="container mb-5">
+                <!--subtitulo contato-->
+                <h2 class="pt-3 pb-3">Contato</h2>
+                <div class="row">
+
+                    <div class="col-md-5">
+                        <div class="card p-5 shadow border-0">
+                            <div class="endereco">
+                                <h4><i class="bi bi-geo-alt"></i>Localização</h4>
+                                <p>Torres, RS</p>
+                            </div>
+
+                            <div class="email">
+                                <h4><i class="bi bi-envelope"></i>E-mail:</h4>
+                                <p>als.stumpf@gmail.com</p>
+                            </div>
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!
+                            1m3!1d3477.1518499752956!2d-49.790617810994206!3d-29.36584271
+                            764064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95
+                            226eda0051e535%3A0x72eceee363a15c02!2sEstr.%20Pedro%20Silveira
+                            %20Sim%C3%A3o%20-%20Torres%2C%20RS%2C%2095560-000!5e0!3m2!1s
+                            pt-BR!2sbr!4v1645057462729!5m2!1spt-BR!2sbr" width="400" 
+                            height="300" style="border:0;" allowfullscreen="" 
+                            loading="lazy" class="w-100"></iframe>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 mt-5 mt-md-0">
+                        <div class="card p-5 h-100 shadow border-0">
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                  <label for="nome" class="form-label">Nome:</label>
+                                  <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="email" class="form-label">E-mail:</label>
+                                  <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail">
+                                </div>
+                                
+                                <div class="col-12">
+                                  <label for="mensagem" class="form-label">Mensagem:</label>
+                                  <textarea type="text" class="form-control" id="Mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="10"></textarea>
+                                </div>
+                                
+                                <div class="col-12 d-flex d-flex justify-content-center mt-5">
+                                  <button type="submit" class="btn-outline-primary" >Enviar e-mail</button>
+                                </div>
+                              </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!--fim da seção contato-->
 
     </main>
     <!--fim do conteúdo principal-->
