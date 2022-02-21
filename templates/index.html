@@ -17,6 +17,8 @@
     
     <!--inicio do menu lateral responsiva-->
     <aside id="header">
+
+        <!--inicio seção icones-->
         <section class="profile">
             <img src="../static/img/perfil.png" alt="Foto do Alexandre">
             <h1>Alexandre Stumpf</h1>
@@ -45,10 +47,13 @@
 
             </div>
         </section>
+        <!--fim seção icones-->
 
+        <!--inicio itens menu lateral-->
         <nav id="navbar" class="nav-menu">
             <ul class="nav flex-column">
 
+                <!--item inicio-->
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#inicio">
                         <i class="bi bi-house"></i>
@@ -56,6 +61,7 @@
                     </a>
                 </li>
 
+                <!--item sobre-->
                 <li class="nav-item">
                     <a class="nav-link" href="#sobre">
                         <i class="bi bi-person"></i>
@@ -63,6 +69,7 @@
                     </a>
                 </li>
 
+                <!--item habilidades-->
                 <li class="nav-item">
                     <a class="nav-link" href="#habilidades">
                         <i class="bi bi-list-check"></i>
@@ -70,6 +77,7 @@
                     </a>
                 </li>
 
+                <!--item curriculo-->
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="#curriculo">
                         <i class="bi bi-file-earmark"></i>
@@ -77,6 +85,7 @@
                     </a>
                 </li>
 
+                <!--item portfolio-->
                 <!--<li class="nav-item">
                     <a class="nav-link" href="#portfolio">
                         <i class="bi bi-collection"></i>
@@ -84,6 +93,7 @@
                     </a>
                 </li>-->
 
+                <!--item email-->
                 <li class="nav-item">
                     <a class="nav-link" href="#email">
                         <i class="bi bi-envelope"></i>
@@ -93,6 +103,8 @@
 
               </ul>
         </nav>
+        <!--fim itens menu lateral-->
+
     </aside>
     <!--fim do menu lateral-->
 
@@ -124,7 +136,7 @@
         <section id="sobre" class="container mt-5"> <!--classe padrão do bootstrap-->
 
             <div class="row w-100"> <!--sistema de grid do bootstrap-->
-                <div class="col-md-12">
+                <div class="col-md-12" data-anime="down"><!--o metodo data serve para utilizar atributos diferenciados, utilizar ou replicar ele em outras partes-->
                     <!--subtitulo sobre-->
                     <h2 class="pt-3">Sobre</h2>
                     <p>
@@ -139,9 +151,9 @@
 
             <div class="row mt-4">
                 <div class="col-md-4">
-                    <img class="img-fluid shadow" src="../static/img/perfil.png" alt="Foto do Alexandre" /> <!--img-fluid e shadow são classes do bootstrap, a img-fluid a imagem se adapta a qualquer tamanho e o shadow coloca um leve sombreamento na borda da imagem-->
+                    <img class="img-fluid shadow" src="../static/img/perfil.png" alt="Foto do Alexandre" data-anime="left"/> <!--img-fluid e shadow são classes do bootstrap, a img-fluid a imagem se adapta a qualquer tamanho e o shadow coloca um leve sombreamento na borda da imagem-->
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8" data-anime="right">
                     <h3>Formação</h3>
                     <details>
 						<summary>Ensino Médio</summary>
@@ -231,56 +243,56 @@
                     <div class="col-md-6">
                         <p class="mt-3 mb-0">HTML5</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                 75%
                             </div>
                         </div>
 
                         <p class="mt-3 mb-0">CSS3</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                                 60%
                             </div>
                         </div>
 
                         <p class="mt-3 mb-0">Java Script</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
                                 15%
                             </div>
                         </div>
 
                         <p class="mt-3 mb-0">Java</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                                 85%
                             </div>
                         </div>
 
                         <p class="mt-3 mb-0">C#</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
                                 55%
                             </div>
                         </div>
 
                         <p class="mt-3 mb-0">PHP</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
                                 45%
                             </div>
                         </div>
 
                         <p class="mt-3 mb-0">Flutter</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
                                 35%
                             </div>
                         </div>
 
                         <p class="mt-3 mb-0">.Net</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 27%;" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 27%;" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100">
                                 27%
                             </div>
                         </div>
@@ -288,56 +300,56 @@
                     <div class="col-md-6">
                         <p class="mt-3 mb-0">My SQL</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                                 80%
                             </div>
                         </div>
 
                         <p class="mt-3 mb-0">Postgre SQL</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                 25%
                             </div>
                         </div>
 
                         <p class="mt-3 mb-0">SQLite</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 58%;" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 58%;" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100">
                                 58%
                             </div>
                         </div>
 
                         <p class="mt-3 mb-0">PHPMyAdmin</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
                                 40%
                             </div>
                         </div>
 
                         <p class="mt-3 mb-0">Firebase</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                                 70%
                             </div>
                         </div>
 
                         <p class="mt-3 mb-0">SCRUM</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 79%;" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 79%;" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100">
                                 79%
                             </div>
                         </div>
 
                         <p class="mt-3 mb-0">UML</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 67%;" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 67%;" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
                                 67%
                             </div>
                         </div>
 
                         <p class="mt-3 mb-0">Python</p> <!--mt deixa um espaçamento a cima da tag p e o mb deixa um espaçamento a baixo da tag p-->
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
                                 10%
                             </div>
                         </div>
@@ -358,7 +370,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <h3>Profissional</h3>
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>Hydrolift - Implementos Rodoviários LTDA</h4>
                             <h5>03/08/2020 à Atual</h5>
                             <p>
@@ -366,7 +378,7 @@
                             </p>
                         </div>
                         
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>Transportes e Logística A L LTDA</h4>
                             <h5>07/05/2020 à 31/07/2020</h5>
                             <p>
@@ -374,7 +386,7 @@
                             </p>
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>Uno Sul Comercio de Vidros LTDA</h4>
                             <h5>06/01/2020 à 04/04/2020</h5>
                             <p>
@@ -382,7 +394,7 @@
                             </p>
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>Vidroforte Industria e Comercio de Vidros S/A</h4>
                             <h5>28/05/2014 à 07/06/2019</h5>
                             <p>
@@ -390,7 +402,7 @@
                             </p>
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>Marcopolo S/A</h4>
                             <h5>16/09/2008 à 24/01/2014</h5>
                             <p>
@@ -398,15 +410,15 @@
                             </p>
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>Doux Frangosul S/A</h4>
-                            <h5>01/08/2008 à 11/09/2008</h5>
+                            <h5>01/082008 à 11/09/2008</h5>
                             <p>
                                 Funções exercidas: Auxiliar de Fábrica.
                             </p>
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item"  data-anime="up">
                             <h4>Unesul de Transportes LTDA</h4>
                             <h5>12/12/2001 à 05/06/2008</h5>
                             <p>
@@ -414,7 +426,7 @@
                             </p>
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>Unesul de Transportes LTDA</h4>
                             <h5>13/12/2000 à 06/03/2001</h5>
                             <p>
@@ -422,7 +434,7 @@
                             </p>
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>Magna Engenharia LTDA</h4>
                             <h5>12/05/1997 à 27/03/1998</h5>
                             <p>
@@ -433,159 +445,185 @@
 
                     <div class="col-md-6">
                         <h3>Educação</h3>
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>Informatica Básica</h4>
                             <h5>2010 à 2010</h5>
                             <p>
                                 <em>Microlins</em>
                                 72 horas
-                                <a class="btn d-flex justify-content-end align-items-end"href="../static/img/certificados/InfoBasica.pdf" target="_blank">
-                                    <input class="button" type="button" value="Ver Certificado">
-                                </a>
+                                <div class="d-flex justify-content-end align-items-end">
+                                    <a class="button" href="../static/img/certificados/InfoBasica.pdf" target="_blank">
+                                        <input class="btn-outline-primary" type="button" value="Ver Certificado">
+                                    </a>
+                                </div>
                             </p> 
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>Montagem e Manutenção de Computadores e Redes</h4>
                             <h5>2011 à 2012</h5>
                             <p>
                                 <em>Microlins</em>
                                 96 horas
-                                <a class="btn d-flex justify-content-end align-items-end" href="../static/img/certificados/MontagemRedeComp.pdf" target="_blank">
-                                    <input class="button" type="button" value="Ver Certificado">
-                                </a>
+                                <div class="d-flex justify-content-end align-items-end">
+                                    <a class="button" href="../static/img/certificados/MontagemRedeComp.pdf" target="_blank">
+                                        <input class="btn-outline-primary" type="button" value="Ver Certificado">
+                                    </a>
+                                </div>
                             </p>
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>ASP.NET Core, Aprendendo do zero ao avançado</h4>
                             <h5>2018 à 2018</h5>
                             <p>
                                 <em>Udemy</em>
                                 15 horas
-                                <a class="btn d-flex justify-content-end align-items-end"  href="../static/img/certificados/ASP.NetCore.pdf" target="_blank">
-                                    <input class="button button2" type="button" value="Ver Certificado">
-                                </a>
+                                <div class="d-flex justify-content-end align-items-end">
+                                    <a class="button" href="../static/img/certificados/ASP.NetCore.pdf" target="_blank">
+                                        <input class="btn-outline-primary" type="button" value="Ver Certificado">
+                                    </a>
+                                </div>
                             </p>
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>Marketing Pessoal</h4>
                             <h5>2015 à 2015</h5>
                             <p>
                                 <em>Cursos Online SP</em>
                                 20 horas
-                                <a class="btn d-flex justify-content-end align-items-end" href="../static/img/certificados/MarquetinPessoal.pdf" target="_blank">
-                                    <input class="button" type="button" value="Ver Certificado">
-                                </a>
+                                <div class="d-flex justify-content-end align-items-end">
+                                    <a class="button" href="../static/img/certificados/MarquetinPessoal.pdf" target="_blank">
+                                        <input class="btn-outline-primary" type="button" value="Ver Certificado">
+                                    </a>
+                                </div>
                             </p>
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>Nivelamento JAVA</h4>
                             <h5>2018 à 2018</h5>
                             <p>
                                 <em>Android Pro</em>
                                 6 horas
-                                <a class="btn d-flex justify-content-end align-items-end" href="../static/img/certificados/NivelamentoJava.pdf" target="_blank">
-                                    <input class="button" type="button" value="Ver Certificado">
-                                </a>
+                                <div class="d-flex justify-content-end align-items-end">
+                                    <a class="button" href="../static/img/certificados/NivelamentoJava.pdf" target="_blank">
+                                        <input class="btn-outline-primary" type="button" value="Ver Certificado">
+                                    </a>
+                                </div>
                             </p>
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>PHP Academy</h4>
                             <h5>2018 à 2018</h5>
                             <p>
                                 <em>Softblue</em>
                                 12 horas
-                                <a class="btn d-flex justify-content-end align-items-end" href="../static/img/certificados/PHPAcademy.pdf" target="_blank">
-                                    <input class="button" type="button" value="Ver Certificado">
-                                </a>
+                                <div class="d-flex justify-content-end align-items-end">
+                                    <a class="button" href="../static/img/certificados/PHPAcademy.pdf" target="_blank">
+                                        <input class="btn-outline-primary" type="button" value="Ver Certificado">
+                                    </a>
+                                </div>
                             </p>
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>UML - Guia Básico para Análise e Projeto de Sistemas I</h4>
                             <h5>2018 à 2018</h5>
                             <p>
                                 <em>Udemy</em>
                                 2 horas
-                                <a class="btn d-flex justify-content-end align-items-end" href="../static/img/certificados/CertificadoUML1.pdf" target="_blank">
-                                    <input class="button" type="button" value="Ver Certificado">
-                                </a>
+                                <div class="d-flex justify-content-end align-items-end">
+                                    <a class="button" href="../static/img/certificados/CertificadoUML1.pdf" target="_blank">
+                                        <input class="btn-outline-primary" type="button" value="Ver Certificado">
+                                    </a>
+                                </div>
                             </p>
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>UML - Guia Básico para Análise e Projeto de Sistemas II</h4>
                             <h5>2018 à 2018</h5>
                             <p>
                                 <em>Udemy</em>
                                 1,5 horas
-                                <a class="btn d-flex justify-content-end align-items-end" href="../static/img/certificados/CertificadoUML2.pdf" target="_blank">
-                                    <input class="button" type="button" value="Ver Certificado">
-                                </a>                
+                                <div class="d-flex justify-content-end align-items-end">
+                                    <a class="button" href="../static/img/certificados/CertificadoUML2.pdf" target="_blank">
+                                        <input class="btn-outline-primary" type="button" value="Ver Certificado">
+                                    </a>
+                                </div>                
                             </p>    
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>Curso Android - Criando CRUD Completo</h4>
                             <h5>2018 à 2018</h5>
                             <p>
                                 <em>Udemy</em>
                                 1,5 horas
-                                <a class="btn d-flex justify-content-end align-items-end" href="../static/img/certificados/CertificadoCRUD.pdf" target="_blank">
-                                    <input class="button" type="button" value="Ver Certificado">
-                                </a>
+                                <div class="d-flex justify-content-end align-items-end">
+                                    <a class="button" href="../static/img/certificados/CertificadoCRUD.pdf" target="_blank">
+                                        <input class="btn-outline-primary" type="button" value="Ver Certificado">
+                                    </a>
+                                </div>
                             </p>
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>Android com Firebase</h4>
                             <h5>2018 à 2018</h5>
                             <p>
                                 <em>Udemy</em>
                                 10 horas
-                                <a class="btn d-flex justify-content-end align-items-end" href="../static/img/certificados/AndroidFirebase.pdf" target="_blank">
-                                    <input class="button" type="button" value="Ver Certificado">
-                                </a>
+                                <div class="d-flex justify-content-end align-items-end">
+                                    <a class="button" href="../static/img/certificados/AndroidFirebase.pdf" target="_blank">
+                                        <input class="btn-outline-primary" type="button" value="Ver Certificado">
+                                    </a>
+                                </div>
                             </p>   
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>Firebase para Android - Módulo I - Autenticações</h4>
                             <h5>2018 à 2018</h5>
                             <p>
                                 <em>Udemy</em>
                                 7,5 horas
-                                <a class="btn d-flex justify-content-end align-items-end" href="../static/img/certificados/FirebaseParaAndroidModuloIAutenticações.pdf" target="_blank">
-                                    <input class="button" type="button" value="Ver Certificado">
-                                </a>
+                                <div class="d-flex justify-content-end align-items-end">
+                                    <a class="button" href="../static/img/certificados/FirebaseParaAndroidModuloIAutenticações.pdf" target="_blank">
+                                        <input class="btn-outline-primary" type="button" value="Ver Certificado">
+                                    </a>
+                                </div>
                             </p>
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>Firebase para Android - Módulo II - Storage e Database</h4>
                             <h5>2019 à 2019</h5>
                             <p>
                                 <em>Udemy</em>
                                 16,5 horas
-                                <a class="btn d-flex justify-content-end align-items-end" href="../static/img/certificados/FirebaseParaAndroidModuloIIStorageEDatabase.pdf" target="_blank">
-                                    <input class="button" type="button" value="Ver Certificado">
-                                </a>
+                                <div class="d-flex justify-content-end align-items-end">
+                                    <a class="button" href="../static/img/certificados/FirebaseParaAndroidModuloIIStorageEDatabase.pdf" target="_blank">
+                                        <input class="btn-outline-primary" type="button" value="Ver Certificado">
+                                    </a>
+                                </div>
                             </p>
                         </div>
 
-                        <div class="cv-item">
+                        <div class="cv-item" data-anime="up">
                             <h4>Git e GitHub</h4>
                             <h5>2017 à 2017</h5>
                             <p>
                                 <em>Udemy</em>
                                 2 horas
-                                <a class="btn d-flex justify-content-end align-items-end" href="../static/img/certificados/Git.pdf" target="_blank">
-                                    <input class="button" type="button" value="Ver Certificado">
-                                </a>
+                                <div class="d-flex justify-content-end align-items-end">
+                                    <a class="button" href="../static/img/certificados/Git.pdf" target="_blank">
+                                        <input class="btn-outline-primary" type="button" value="Ver Certificado">
+                                    </a>
+                                </div>
                             </p>
                         </div>
                     </div>
@@ -604,14 +642,14 @@
                 <div class="row">
 
                     <div class="col-md-5">
-                        <div class="card p-5 shadow border-0">
+                        <div class="card p-5 shadow border-0" data-anime="up">
                             <div class="endereco">
-                                <h4><i class="bi bi-geo-alt"></i>Localização</h4>
+                                <h4><i class="bi bi-geo-alt"></i> Localização:</h4>
                                 <p>Torres, RS</p>
                             </div>
 
                             <div class="email">
-                                <h4><i class="bi bi-envelope"></i>E-mail:</h4>
+                                <h4><i class="bi bi-envelope"></i> E-mail:</h4>
                                 <p>als.stumpf@gmail.com</p>
                             </div>
 
@@ -628,24 +666,28 @@
                     </div>
 
                     <div class="col-md-7 mt-5 mt-md-0">
-                        <div class="card p-5 h-100 shadow border-0">
-                            <form class="row g-3">
+                        <div class="card p-5 h-100 shadow border-0" data-anime="left">
+                            <form class="row g-3" action='/send' method="POST">
                                 <div class="col-md-6">
                                   <label for="nome" class="form-label">Nome:</label>
-                                  <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
+                                  <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
                                 </div>
                                 <div class="col-md-6">
                                   <label for="email" class="form-label">E-mail:</label>
-                                  <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail">
+                                  <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
                                 </div>
                                 
                                 <div class="col-12">
                                   <label for="mensagem" class="form-label">Mensagem:</label>
-                                  <textarea type="text" class="form-control" id="Mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="10"></textarea>
+                                  <textarea type="text" class="form-control" id="Mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="10" required></textarea>
                                 </div>
                                 
                                 <div class="col-12 d-flex d-flex justify-content-center mt-5">
-                                  <button type="submit" class="btn-outline-primary" >Enviar e-mail</button>
+                                  <button id="btn-enviar" type="submit" class="btn-outline-primary" >Enviar e-mail</button>
+                                  <button id="btn-enviar-loader" class="btn btn-primary" type="button" disabled>
+                                      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                      Enviando...
+                                  </button>
                                 </div>
                               </form>
                         </div>
@@ -657,8 +699,30 @@
         </section>
         <!--fim da seção contato-->
 
+        <!--para chamar a mensagem flash do Python no HTML-->
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+            <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
+                <i class="bi bi-check-circle-fill"></i> {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
     </main>
     <!--fim do conteúdo principal-->
+
+    <!--inicio do conteúdo rodapé-->
+        <footer id="footer">
+            <div class="container">
+                <div class="text-center">
+                    &copy;Copyright <strong>Alexandre Stumpf</strong>
+                </div>
+            </div>
+        </footer>
+    <!--fim do conteúdo rodapé-->
 
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../static/script.js"></script>

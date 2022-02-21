@@ -159,7 +159,7 @@ i.menu-mobile {
     left: 0; /*faz com que o menu lateral fique com a tag left com 300px novamente*/
 }
 
-/*altera as tags quando a tela estiver do tamanho de 1024px*/
+/*altera as tags quando a tela estiver do tamanho de 1024px ou menos*/
 @media (max-width: 1024px) {
     /*alteração do menu lateral*/
     #header{
@@ -220,6 +220,43 @@ i.menu-mobile {
     background-color: #eff5ff;
 }
 
+/*animação*/
+[data-anime] {
+    opacity: 0;
+    transition: 1s;
+}
+
+/*animação que vem de baixo*/
+[data-anime="down"] {
+    transform: translate3d(0, -100%, 0);
+}
+
+/*animação que vem de cima*/
+[data-anime="up"] {
+    transform: translate3d(0, 100%, 0);
+}
+
+/*animação que vem da esquerda*/
+[data-anime="left"] {
+    transform: translate3d(-100%, 0, 0);
+}
+
+/*animação que vem da direita*/
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+@media (max-device-width: 1860px) {
+    [data-anime="right"] {
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
 .cv.cv-title {
     font-weight: 700;
     margin-top: 20px;
@@ -264,20 +301,48 @@ i.menu-mobile {
 }
 
 .button {
-	background-color: #4CAF50; /* Green */
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-	-webkit-transition-duration: 0.4s; /* Safari */
-	transition-duration: 0.4s;
-	border-radius: 4px;
+	border: none; /*sem borda*/
+	padding: 0; /*sem espaço entre o botão*/
+	text-align: center; /*texto do botão centralizado*/
+	text-decoration: none; /*sem decoração do texto*/
 }
+
+/*cria uma borda sombreada quando o mouse passa por sima*/
 .button:hover {
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#btn-enviar-loader { 
+    display: none;
+}
+
+/*posição do alert na pagina*/
+#alerta {
+    position:fixed; /*posição fixa*/
+    z-index: 10; /*sobresalta qualquer coisa na tela*/
+    top: 30px;
+    align-items: center;
+}
+
+/*deixa a foter fixa abaixo do menu lateral, no rodapé*/
+#footer {
+    padding: 15px; /*deixa uma distancia de 15px ao redor da footer*/
+    color: #fff; /*cor da fonte*/
+    font-size: 14px; /*tamanho da fonte*/
+    position: fixed; /*posição fixa*/
+    left: 0; /*joga a footer para a esquerda*/
+    bottom: 0; /*joga a footer para baixo*/
+    width: 300px; /*largura lateral*/
+    z-index: 9999; /*para ficar a cima de tudo*/
+    background-color: #021124; /*cor do fundo*/
+    transition: .3s;
+}
+
+/*muda as tags do id footer conforme o tamanho da tela*/
+@media (max-width: 1012px) {
+    #footer {
+        /*deixa a footer fixa no rodapé da pagina em uma tela mobile*/
+        position: static;
+        width: auto;
+    }
 }
