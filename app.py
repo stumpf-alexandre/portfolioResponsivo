@@ -38,7 +38,6 @@ def send():
             request.form["email"], 
             request.form["mensagem"]
         )
-
         msg = Message(
             subject = f'{formContato.nome} te enviou uma mensagem no portfólio',
             sender = app.config.get("MAIL_USERNAME"),
@@ -48,7 +47,6 @@ def send():
             {formContato.nome} com o e-mail {formContato.email}, te enviou a seguinte mensagem:
 
             {formContato.mensagem}
-
             
             '''
         )

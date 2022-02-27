@@ -1,2 +1,2 @@
-email = 'als.stumpf@gmail.com'
+email = 'portfolio.alexandrestumpf@gmail.com'
 senha = '22 de outubro de 1979'

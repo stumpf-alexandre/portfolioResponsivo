@@ -88,7 +88,7 @@ html, body {
 
 /*alterando o icone ao fazer um houver*/
 .nav-menu a:hover i,
-.nav-menu .active i,
+.nav-menu .active,
 .nav-menu .active:focus i,
 .nav-menu li:hover > a i {
     color: #149ddd; /*cor do icone ao passar o mouse*/
@@ -321,7 +321,7 @@ i.menu-mobile {
     position:fixed; /*posição fixa*/
     z-index: 10; /*sobresalta qualquer coisa na tela*/
     top: 30px;
-    align-items: center;
+    right: 30px;
 }
 
 /*deixa a foter fixa abaixo do menu lateral, no rodapé*/

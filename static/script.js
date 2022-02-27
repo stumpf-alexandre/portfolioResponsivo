@@ -49,10 +49,15 @@ window.addEventListener("scroll", () =>{
 //ativar o botão enviar loader quando o botão enviar for clicado
 const btnEnviar = document.querySelector('#btn-enviar')
 const btnEnviarLoader = document.querySelector('#btn-enviar-loader')
+const nome = document.querySelector('#nome')
+const email = document.querySelector('#email')
+const mensagem = document.querySelector('#mensagem')
 
 btnEnviar.addEventListener("click", () =>{
-    btnEnviarLoader.style.display = "block";
-    btnEnviar.style.display = "none"
+    if (nome.value.length != 0 && email.value.length != 0 && mensagem.value.length != 0){
+        btnEnviarLoader.style.display = "block";
+        btnEnviar.style.display = "none";
+    }
 })
 
 //tirar a menssagem flash apos 5 segundos
