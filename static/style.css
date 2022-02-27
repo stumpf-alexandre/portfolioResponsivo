@@ -159,7 +159,7 @@ i.menu-mobile {
     left: 0; /*faz com que o menu lateral fique com a tag left com 300px novamente*/
 }
 
-/*altera as tags quando a tela estiver do tamanho de 1024px ou menos*/
+/*media quare quando a tela estiver do tamanho de 1024px ou menos*/
 @media (max-width: 1024px) {
     /*alteração do menu lateral*/
     #header{
@@ -188,12 +188,12 @@ i.menu-mobile {
     }
 }
 
-/*acionando o telefone conforme o tamanho da tela*/
+/*media quare para acionar o telefone conforme o tamanho da tela*/
 @media screen and (max-device-width: 767px) and (orientation: landscape) {
     .tel{ display:block !important; }
 }
 
-/*acionando o telefone conforme o tamanho da tela*/
+/*media quare para acionar o telefone conforme o tamanho da tela*/
 @media only screen and (max-width: 2560px){
     .tel{ display:block !important; }
 }
@@ -251,6 +251,7 @@ i.menu-mobile {
     transform: translate3d(0, 0, 0);
 }
 
+/*midia quare da animação quando a tela for alterada*/
 @media (max-device-width: 1860px) {
     [data-anime="right"] {
         transform: translate3d(0, 100%, 0);
@@ -338,7 +339,7 @@ i.menu-mobile {
     transition: .3s;
 }
 
-/*muda as tags do id footer conforme o tamanho da tela*/
+/*midia quare do footer conforme o tamanho da tela*/
 @media (max-width: 1012px) {
     #footer {
         /*deixa a footer fixa no rodapé da pagina em uma tela mobile*/
