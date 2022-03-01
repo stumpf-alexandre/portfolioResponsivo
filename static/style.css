@@ -63,7 +63,7 @@ html, body {
 .nav-menu a,
 .nav-menu a:focus {
     display: flex; /*deixa o displai com flex box*/
-    align-items: center; /*centraliza os icones co as frases*/
+    align-items: center; /*centraliza os icones com as frases*/
     color: #a8a9b4; /*cor do icone em descanço*/
     transition: 0.3s; /*na hora de aplicar o hover*/
     font-size: 15px; /*tamanho da fonte*/
@@ -85,10 +85,10 @@ html, body {
     text-decoration: none; /*sem decoração de texto no link*/
     color: #fff; /*cor da fonte do link ao passar o mouse*/
 }
-
+ 
 /*alterando o icone ao fazer um houver*/
 .nav-menu a:hover i,
-.nav-menu .active,
+.nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover > a i {
     color: #149ddd; /*cor do icone ao passar o mouse*/
@@ -159,7 +159,7 @@ i.menu-mobile {
     left: 0; /*faz com que o menu lateral fique com a tag left com 300px novamente*/
 }
 
-/*media quare quando a tela estiver do tamanho de 1024px ou menos*/
+/*mediaquare quando a tela estiver do tamanho de 1024px ou menos*/
 @media (max-width: 1024px) {
     /*alteração do menu lateral*/
     #header{
@@ -188,12 +188,12 @@ i.menu-mobile {
     }
 }
 
-/*media quare para acionar o telefone conforme o tamanho da tela*/
+/*mediaquare para acionar o telefone conforme o tamanho da tela*/
 @media screen and (max-device-width: 767px) and (orientation: landscape) {
     .tel{ display:block !important; }
 }
 
-/*media quare para acionar o telefone conforme o tamanho da tela*/
+/*mediaquare para acionar o telefone conforme o tamanho da tela*/
 @media only screen and (max-width: 2560px){
     .tel{ display:block !important; }
 }
@@ -251,7 +251,7 @@ i.menu-mobile {
     transform: translate3d(0, 0, 0);
 }
 
-/*midia quare da animação quando a tela for alterada*/
+/*mediaquare da animação quando a tela for alterada*/
 @media (max-device-width: 1860px) {
     [data-anime="right"] {
         transform: translate3d(0, 100%, 0);
@@ -339,7 +339,7 @@ i.menu-mobile {
     transition: .3s;
 }
 
-/*midia quare do footer conforme o tamanho da tela*/
+/*mediaquare do footer conforme o tamanho da tela*/
 @media (max-width: 1012px) {
     #footer {
         /*deixa a footer fixa no rodapé da pagina em uma tela mobile*/
