@@ -347,3 +347,17 @@ i.menu-mobile {
         width: auto;
     }
 }
+
+/*estilizando icone responsivo*/
+.icone-responsivo {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+.icon {
+    width:100px;
+    height:70px;
+}
