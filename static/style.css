@@ -22,13 +22,17 @@ html, body {
 }
 
 /*css da foto do menu lateral*/
-#header .profile img {
+#header .profile img{
     margin: 15px auto; /*margem de 15 px para cima e para baixo e automatico para a esquerda e direita*/
     display: block; /*forma do display*/
-    width: 120px; /*largura*/
-    border:8px solid #2c2f3f; /*borda solida com cor*/
+    width: 50%; /*largura relativa*/
+    height: 150px; /*altura fixa*/
+    border:6px solid #fff; /*borda solida com cor*/
     border-radius: 50%; /*deixa a foto redonda*/
+    object-fit: cover; /*ajusta a imagem para tornala responsiva*/
+    object-position: top; /*foca em uma parte especifica da imagem*/
 }
+
 
 /*css do nome do menu lateral*/
 #header .profile h1 {
